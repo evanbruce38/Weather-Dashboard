@@ -14,9 +14,9 @@
 
 <!-- Header -->
 <body class="body">
-    <header class="hero">
-        <div class="h1-container d-flex translate-middle bg-gradient-info justify-content-center">
-            <h1 class="app-title">Weather Dashboard</h1>
+    <header class="header">
+        <div class="h1-container d-flex translate-middle bg-dark justify-content-center">
+            <h1 class="h1 text-light">Weather Dashboard</h1>
         </div>
     </header>
 
@@ -25,7 +25,7 @@
         <div class="container-fluid">
             <div class="row page-content">
 
-                <!-- Search bar -->
+                <!-- Search Bar -->
                 <div class="col-sm-4 bg-light p-0">
                     <div class="form-container">
                         <form id="search-form">
@@ -36,10 +36,10 @@
                             <!-- search input and button -->
                             <div class="row m-0">
                                 <div class="col-sm-8 p-0 my-auto">
-                                    <input type="text" id="search-input" name="search-input" class="search-input-rounded">
+                                    <input type="text" id="search-input" name="search-input" class="search-input rounded">
                                 </div>
                                 <div class="col-sm-4 p-0">
-                                    <button type="submit" class="btn ng-primary rounded search-button">
+                                    <button type="submit" class="btn bg-primary rounded search-button">
                                         <span>Search</span>
                                     </button>
                                 </div>
@@ -47,11 +47,11 @@
                         </form>
                     </div>
 
-                    <!-- Search History -->
+                    <!-- search history -->
                     <div id="search-history-container" class="row m-0 search-history-container"></div>
 
                 </div>
-            
+    
 
                 <div class="col-sm-8 p-0">
 
@@ -64,7 +64,7 @@
 
                         <!-- current weather attributes -->
                         <p class="current-temperature" id="current-temperature"></p>
-                        <p class="current humidity" id="current-humidity"></p>
+                        <p class="current-humidity" id="current-humidity"></p>
                         <p class="current-wind-speed" id="current-wind-speed"></p>
                         <p class="current-uv-index" id="current-uv-index"></p>
                         <p class="current-number rounded" id="current-number"></p>
@@ -73,7 +73,7 @@
                     <!-- 5 day forecast -->
                     <div class="row future-forecast-container d-block">
                         <h2 class="future-forecast-title" id="future-forecast-title"></h2>
-                        <div id="forecasts-card-container" class="forecasts-cards-container d-flex justify-content-between">
+                        <div id="forecasts-cards-container" class="forecasts-cards-container d-flex justify-content-between">
                             <div class="future-card bg-primary rounded">
                                 <p class="future-date" id="future-date-1"></p>
                                 <img id="future-icon-1" src="" alt="">
@@ -110,9 +110,9 @@
             </div>
         </div>
     </main>
-  
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="./assets/js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
