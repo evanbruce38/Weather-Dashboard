@@ -4,17 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Challenge-6-Weather-Display</title>
+    <title>Challenge-6-Weather-Dashboard</title>
 </head>
 
-<body class="flex-column min-100-vh">
+<body class="body">
     <header class="hero">
-        <h1 class="app-title">Weather Dashboard</h1>
-        <p>Search for a city to see it's current weather forecast!</p>
+        <div class="h1-container d-flex translate-middle bg-gradient-info justify-content-center">
+            <h1 class="app-title">Weather Dashboard</h1>
+        </div>
     </header>
-    
+
+    <main class="main">
+        <div class="row page-content">
+            <div class="col-sm-4 bg-light p-0">
+                <div class="form-container">
+                    <form id="search-form">
+                        <div class="row m-0">
+                            <label for="search-input" class="search-label m-0 text-dark">Search for a City:</label>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-sm-8 p-0 my-auto">
+                                <input type="text" id="search-input" name="search-input" class="search-input-rounded">
+                            </div>
+                            <div class="col-sm-4 p-0">
+                                <button type="submit" class="btn ng-primary rounded search-button">
+                                    <span class="glyphicon glyphicon search"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="search-history-container" class="row m-0 search-history-container"></div>
+
+            </div>
+        </div>
+
+        
+    </main>
+  
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
