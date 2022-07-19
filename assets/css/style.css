@@ -128,3 +128,7 @@
     font-size: 17px;
     font-weight: 200;
 }
+
+.future-card p {
+    color: white;
+}
